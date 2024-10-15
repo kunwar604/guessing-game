@@ -57,17 +57,19 @@ else if (numberguess < useranswer) {
   console.log("too small!");
 }
 
-
+//Looks pretty good! Remember to use title case for the Variable names - Cesaria
 }
 
 readline.question('Set the correct answer', (useranswerInput) => {
 const correctnumber = Number(useranswerInput)
 
 startgame(correctnumber)
+
 });
 
 function startgame(correctnumber) {
   readline.question('guess a number or type "quit" to stop: ', (userguess) => {
+//add a local variable that converts the guess to a number that is recieved as input to a constant value for use in this function, same think you did for the correctnumber variable above - Cesaria
     if (userguess === "quit") {
       console.log("you chose to quit the game");
       readline.close();
@@ -77,3 +79,4 @@ function startgame(correctnumber) {
     }
   });
 }
+// looks pretty good overall!-Cesaria
